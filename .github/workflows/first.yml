@@ -1,0 +1,22 @@
+jobs:
+  jobs1:
+    name: First Job
+    runs-on: ubntu-Latest
+    steps:
+      - name: Step one
+        uses: actions/checkout@v2
+      - name : Step two
+       run: env| sort
+
+    jobs2:
+      name:Second Job
+    runns-on: windows-Latest
+    steps:
+      - name: Step one
+        uses: actions/checkout@v2
+      - name : Step two
+        run: "Get-ChildItem Emv : | Sort-Object Name"
+
+
+
+       
